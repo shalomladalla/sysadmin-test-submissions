@@ -17,9 +17,9 @@ payload = {
 def send_email(subject, body):
     smtp_server = 'smtp.gmail.com'
     smtp_port = 465  
-    sender_email = 'www.piyushdwivedi117@gmail.com'
+    sender_email = ''
     app_password = '***********' # App password generated from Google account settings
-    receiver_email = 'b23354@students.iitmandi.ac.in' #student email
+    receiver_email = '' #student email
 
     message = MIMEMultipart()
     message['From'] = sender_email

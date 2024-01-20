@@ -2,8 +2,8 @@
 import getpass, smtplib  
 host="smtp-mail.outlook.com"
 port=587
-from_email="suhani.sharma6210@outlook.com"
-to_email="tryanderror1288@gmail.com"  #to be taken via web scraping
+from_email="************"
+to_email="************"  #to be taken via web scraping
 pwd=getpass.getpass('Enter your password here :')
 
 msg="""Subject: Reminder regarding unsubmitted assignment

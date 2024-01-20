@@ -55,12 +55,12 @@ def send_email(subject,body):
     msg = EmailMessage()
     msg.set_content(body)
     msg['Subject'] = subject
-    msg['From'] = "utsavjain218@gmial.com" 
+    msg['From'] = "************" 
     msg['To'] = recipient_email
 
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
         smtp.starttls()
-        smtp.login("utsavjain218@gmail.com", "app password")
+        smtp.login("************", "app password")
         smtp.send_message(msg)
 
 

@@ -11,16 +11,16 @@ homepage_url = 'https://lms.iitmandi.ac.in/'
 
 payload = {
     'username': 'b23354',
-    'password': 'Piyush@2904'
+    'password': '*******'
 }
 
 def send_email(subject, body):
     # Gmail SMTP settings
     smtp_server = 'smtp.gmail.com'
     smtp_port = 465  
-    sender_email = 'www.piyushdwivedi117@gmail.com'
+    sender_email = '*******'
     app_password = '***********' # App password generated from Google account settings
-    receiver_email = 'b23354@students.iitmandi.ac.in' #student email
+    receiver_email = '*******' #student email
 
     # Create the email message
     message = MIMEMultipart()

@@ -9,9 +9,9 @@ client = docker.from_env()
 # adding the mailing service
 smtp_server = 'smtp.gmail.com'
 smtp_port = 465  
-sender_email = 'www.piyushdwivedi117@gmail.com'
-app_password = 'vftc pdrc mozy xmhd'
-receiver_email = 'b23354@students.iitmandi.ac.in'
+sender_email = ''
+app_password = ''
+receiver_email = ''
 
 def send_email(container_name, program_name, timestamp, exit_code):
     subject = f"Container Alert: {container_name} Status Change"

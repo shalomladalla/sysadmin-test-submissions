@@ -7,7 +7,7 @@ import time
 from apscheduler.schedulers.background import BackgroundScheduler
 import resend
 
-resend.api_key = 're_V93MJZDh_PCErxqTcGXUeAyqV71sGauMA'
+resend.api_key = '*************'
 
 
 def notify(a):
@@ -15,7 +15,7 @@ def notify(a):
     '<div>' + a['course']['name'] + ' due at ' + a['due'].strftime('%Y-%m-%d %H:%M:%S') + '</div>'}"
   params = {
       "from": "Assignment Reminder <reminder@resend.dev>",
-      "to": ["panpaliyapiyush0@gmail.com"],
+      "to": ["*************"],
       "subject": "ASSIGNMENT BHAIII",
       "html": html,
   }
@@ -41,7 +41,7 @@ def login():
   r = s.get(url)
   doc = pq(r.text)
   lt = doc('input[name="logintoken"]').attr('value')
-  r2 = s.post(url, data={'username': 'b23279', 'password': 'PASSWORDBHAIIII',
+  r2 = s.post(url, data={'username': 'b23279', 'password': '*********',
                          'logintoken': lt})
   r2 = s.get(url)
   with open('login.json', 'w') as f:

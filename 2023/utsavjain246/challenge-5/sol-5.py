@@ -21,7 +21,7 @@ def parse_time_remaining(time_remaining):
 
 
 def send_email(subject,body):
-    recipient_email = "utsavjain234@gmail.com"
+    recipient_email = "************"
 
     msg = EmailMessage()
     msg.set_content(body)
@@ -31,7 +31,7 @@ def send_email(subject,body):
 
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
         smtp.starttls()
-        smtp.login("utsavjain218@gmail.com", "app password")
+        smtp.login("************", "app password")
         smtp.send_message(msg)
 
 

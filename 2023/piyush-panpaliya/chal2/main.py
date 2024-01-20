@@ -6,7 +6,7 @@ import time
 import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
 
-resend.api_key = 're_hQv8eniG_MiSGRJ8NupbNQiyy7xHeQ1BX'
+resend.api_key = '***********'
 def sendEmail(c,o):
   html=f"<div><strong>service(s) down! at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</strong></div>"
   lhtml = "<div><strong>Services that are still down</strong></div>"
@@ -19,7 +19,7 @@ def sendEmail(c,o):
     final = lhtml+"<p>=====================================================<p>"+final
   params = {
       "from": "SAIC-monitoring <monitoring@resend.dev>",
-      "to": ["panpaliyapiyush0@gmail.com"],
+      "to": ["************"],
       "subject": "SERVICE DOWN",
       "html": final,
   }
